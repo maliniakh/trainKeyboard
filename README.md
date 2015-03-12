@@ -1,4 +1,4 @@
-## trainKeyboard
+### trainKeyboard
 A solution for following problem:
 
 _The machine has a touchscreen display which works as follows. As the user types each character of the station’s name on the touchscreen, the display should update to show all valid choices for the next character and a list of possible matching stations.
@@ -6,8 +6,10 @@ For example when ‘D A R T’ has been entered, the code should return, say, ["
 
 The solution uses trie-like data structure to get the results. The trie structure is built on the initialization only, the results are computed at O(log n) complexity. Information within the trie is redundant, i.e. every node keeps track of all cities in the nodes below it. That means the result is ready upon reaching any given node and no additional traversing is needed. The effect is that the time complexity is lower at the expense of the space complexity.
 
-Running
+#### Running
+
 _mvn test_
 
-Requirements
+#### Requirements
+
 Java 7 or newer
