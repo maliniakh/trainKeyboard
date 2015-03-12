@@ -68,7 +68,7 @@ public class KeyboardImplTest {
         String prefix = "Bath";
         Result result = keyboard.getPossibleCharacters(prefix);
         System.out.println("prefix: " + prefix);;
-        System.out.println(result);
+        System.out.println(result + "\n");
         Assert.assertEquals(1, result.destinations.size());
         Assert.assertEquals("Bath", result.destinations.get(0));
         Assert.assertEquals(0, result.characters.size());
@@ -80,14 +80,14 @@ public class KeyboardImplTest {
         String prefix = "X";
         Result result = keyboard.getPossibleCharacters(prefix);
         System.out.println("prefix: " + prefix);;
-        System.out.println(result);
+        System.out.println(result + "\n");
         Assert.assertEquals(0, result.destinations.size());
         Assert.assertEquals(0, result.characters.size());
 
         prefix = "Sx";
         result = keyboard.getPossibleCharacters(prefix);
         System.out.println("prefix: " + prefix);
-        System.out.println(result);
+        System.out.println(result + "\n");
         Assert.assertEquals(0, result.destinations.size());
         Assert.assertEquals(0, result.characters.size());
     }
@@ -97,7 +97,7 @@ public class KeyboardImplTest {
         String prefix = "";
         Result result = keyboard.getPossibleCharacters(prefix);
         System.out.println("prefix: " + prefix);;
-        System.out.println(result);
+        System.out.println(result + "\n");
         Assert.assertEquals(66, result.destinations.size());
         Assert.assertEquals(19, result.characters.size());
     }
