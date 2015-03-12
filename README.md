@@ -1,5 +1,5 @@
 ### trainKeyboard
-A solution for following problem:
+A solution for a following problem:
 
 > _The machine has a touchscreen display which works as follows. As the user types each character of the station’s name on the touchscreen, the display should update to show all valid choices for the next character and a list of possible matching stations.
 For example when ‘D A R T’ has been entered, the code should return, say, ["DARTFORD", "DARTMOUTH"] along with letters ['F', 'M']_
