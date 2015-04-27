@@ -12,4 +12,4 @@ _mvn test_
 
 #### Requirements
 
-Java 7 or newer
+Java 6 or newer
